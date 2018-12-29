@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+</head>
+
+<script>
+    function register(){
+       window.location="registration.html"; 
+    }
+</script>
+
+<body>
+    <form action="dashboard.html" onsubmit="return loginValidation()">
+        Email:<br>
+        <input id="email" type="text"> <br>
+        <span id="useremail"></span><br>
+
+        Password:<br>
+        <input id="password" type="password"> <br>
+        <span id="userpassword"></span><br>
+        
+        <input type="submit" value="Login">
+        <input type="button" value="Register" onclick="register()">
+    </form>
+</body>
+
+<script src="loginValidation.js"></script>
+
+</html>
